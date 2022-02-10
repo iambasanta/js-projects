@@ -9,7 +9,7 @@ function displayMessage(message) {
 }
 
 function generateSecretNumber() {
-    return Math.trunc(Math.random() * 20);
+    return Math.trunc(Math.random() * 20 + 1);
 }
 
 let secretNumber = generateSecretNumber();
