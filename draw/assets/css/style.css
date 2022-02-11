@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #ffc73c;
+  --primary-dark: #222222;
+  --primary-light: #f3f3f3;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  background: var(--primary-light);
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  background: var(--primary-dark);
+}
+
+main section {
+  display: block;
+  margin: 15px auto;
+  width: 30px;
+  height: 30px;
+}
+
+main .colors {
+  background: var(--primary-dark);
+  border: 1px solid var(--primary-light);
+  position: relative;
+}
+main .colors .color-picker {
+  display: none;
+  width: 200px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+main .colors .color-picker:focus {
+  display: block;
+}
+main .colors:hover .color-picker {
+  display: block;
+}
+main .thickness {
+  position: relative;
+  background-color: var(--primary-light);
+}
+main .thickness::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background: var(--primary-dark);
+}
+main .thickness .stroke-weight {
+  display: none;
+  position: absolute;
+  width: auto;
+  height: 25px;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .thickness:hover .stroke-weight {
+  display: block;
+}
+main .clear {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 10px auto;
+  color: var(--primary-dark);
+  font-size: 20px;
+  font-weight: 900;
+  background-color: var(--primary-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+main div .save {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 10px auto;
+  color: var(--primary-dark);
+  font-size: 20px;
+  font-weight: 900;
+  background-color: var(--primary-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
